@@ -1,0 +1,36 @@
+{
+  "nom": "Cuvelier",
+  "prenom": "Maxime",
+  "compétence": [
+    "html",
+    "css",
+    "Javasript",
+    "React"
+  ],
+  "projects": [
+    {
+      "name": "Projet Ohmyfood",
+      "description": "Un site web entièrement réalisé en html et css",
+      "slug": "Ohmyfood",
+      "github": "https://github.com/MaxCuvelier/Ohmyfood"
+    },
+    {
+      "name": "Application ToDo",
+      "description": "Une application web simple pour gérer des tâches quotidiennes avec React et Tailwind CSS.",
+      "slug": "js-snake",
+      "github": "https://github.com/toto/todo-app"
+    },
+    {
+      "name": "API REST Node.js",
+      "description": "Une API REST construite avec Express et MongoDB pour gérer des utilisateurs et des articles.",
+      "slug": "js-snake",
+      "github": "https://github.com/toto/node-api"
+    },
+    {
+      "name": "Jeu en JavaScript",
+      "description": "Un petit jeu de type Snake développé en JavaScript pur pour s’entraîner à la logique de programmation.",
+      "slug": "js-snake",
+      "github": "https://github.com/toto/js-snake"
+    }
+  ]
+}
