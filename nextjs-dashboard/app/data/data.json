@@ -9,28 +9,32 @@
   ],
   "projects": [
     {
-      "name": "Projet Ohmyfood",
-      "description": "Un site web entièrement réalisé en html et css",
+      "name": "Application de location immobilière Kasa",
+      "description": "Un site web simple réalisé avec React",
+      "slug": "Kasa",
+      "github": "https://github.com/MaxCuvelier/Kasa",
+      "image": "/images/Kasa.png"
+    },
+    {
+      "name": "Application bancaire ArgentBank",
+      "description": "Une application web simple pour gérer le compte bancaire d'un utilisateur",
+      "slug": "ArgentBank",
+      "github": "https://github.com/MaxCuvelier/ArgentBank",
+      "image": "/images/ArgentBank.png"
+    },
+    {
+      "name": "Portfolio dynamique javaScript",
+      "description": "un site web de type portfolio réaliser en html, css et javaScript",
+      "slug": "SophieBluel",
+      "github": "https://github.com/MaxCuvelier/SophieBluel",
+      "image": "/images/SophieBluel.png"
+    },
+    {
+      "name": "Application de restauration Ohmyfood",
+      "description": "Un site web réalisé entièrement en html et css avec des animation en scss",
       "slug": "Ohmyfood",
-      "github": "https://github.com/MaxCuvelier/Ohmyfood"
-    },
-    {
-      "name": "Application ToDo",
-      "description": "Une application web simple pour gérer des tâches quotidiennes avec React et Tailwind CSS.",
-      "slug": "js-snake",
-      "github": "https://github.com/toto/todo-app"
-    },
-    {
-      "name": "API REST Node.js",
-      "description": "Une API REST construite avec Express et MongoDB pour gérer des utilisateurs et des articles.",
-      "slug": "js-snake",
-      "github": "https://github.com/toto/node-api"
-    },
-    {
-      "name": "Jeu en JavaScript",
-      "description": "Un petit jeu de type Snake développé en JavaScript pur pour s’entraîner à la logique de programmation.",
-      "slug": "js-snake",
-      "github": "https://github.com/toto/js-snake"
+      "github": "https://github.com/MaxCuvelier/Ohmyfood",
+      "image": "/images/Ohmyfood.png"
     }
   ]
 }
