@@ -3,8 +3,14 @@ import { notFound } from "next/navigation";
 import Header from 'app/ui/header'
 import Footer from 'app/ui/footer'
 
-export default async function ProjectPage({ params }: { params: Record<string, string> }) {
-  const slug = params.slug;
+interface ProjectPageProps {
+  params: {
+    slug: string;
+  };
+}
+
+export default function ProjectPage({ params }: ProjectPageProps) {
+  const { slug } = params;
   const project = data.projects.find(p => p.slug === slug);
 
   if (!project) {
