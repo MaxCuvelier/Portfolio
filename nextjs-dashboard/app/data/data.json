@@ -9,28 +9,28 @@
   ],
   "projects": [
     {
-      "name": "Application de location immobilière Kasa",
+      "name": "Application Kasa",
       "description": "Un site web simple réalisé avec React",
       "slug": "Kasa",
       "github": "https://github.com/MaxCuvelier/Kasa",
       "image": "/images/Kasa.png"
     },
     {
-      "name": "Application bancaire ArgentBank",
+      "name": "Application ArgentBank",
       "description": "Une application web simple pour gérer le compte bancaire d'un utilisateur",
       "slug": "ArgentBank",
       "github": "https://github.com/MaxCuvelier/ArgentBank",
       "image": "/images/ArgentBank.png"
     },
     {
-      "name": "Portfolio dynamique javaScript",
+      "name": "Portfolio Sophie Bluel",
       "description": "un site web de type portfolio réaliser en html, css et javaScript",
       "slug": "SophieBluel",
       "github": "https://github.com/MaxCuvelier/SophieBluel",
       "image": "/images/SophieBluel.png"
     },
     {
-      "name": "Application de restauration Ohmyfood",
+      "name": "Application Ohmyfood",
       "description": "Un site web réalisé entièrement en html et css avec des animation en scss",
       "slug": "Ohmyfood",
       "github": "https://github.com/MaxCuvelier/Ohmyfood",

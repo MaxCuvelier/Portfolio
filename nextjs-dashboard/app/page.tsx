@@ -8,7 +8,7 @@ import Banner from "app/ui/components/banner"
 
 export default function Page() {
   return (
-    <main className="flex min-h-screen flex-col p-6">
+    <main className="flex min-h-screen flex-col p-0">
       <Header />
         <Banner />
         <section id="projects" className="max-w-6xl mx-auto px-4 py-12">
