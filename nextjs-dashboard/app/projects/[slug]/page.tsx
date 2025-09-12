@@ -3,8 +3,9 @@ import { notFound } from "next/navigation";
 import Header from 'app/ui/header'
 import Footer from 'app/ui/footer'
 
-export default function ProjectPage({ params }: { params: { slug: string } }) {
-  const project = data.projects.find((p) => p.slug === params.slug);
+export default async function ProjectPage({ params }: { params: Record<string, string> }) {
+  const slug = params.slug;
+  const project = data.projects.find(p => p.slug === slug);
 
   if (!project) {
     return notFound();
