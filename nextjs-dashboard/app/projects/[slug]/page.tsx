@@ -2,39 +2,6 @@ import data from "../../data/data.json";
 import { notFound } from "next/navigation";
 import Header from 'app/ui/header'
 import Footer from 'app/ui/footer'
-import { Metadata } from "next";
-
-const DEFAULT_IMAGE = "https://www.ton-site.com/images/default-preview.png";
-
-
-export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
-  const project = data.projects.find((p) => p.slug === params.slug);
-
-  if (!project) {
-    return {
-      title: "Projet introuvable | Portfolio de Toto",
-      description: "Ce projet n'existe pas dans mon portfolio.",
-    };
-  }
-
-  return {
-    title: `${project.name} | Portfolio de Toto`,
-    description: project.description,
-    openGraph: {
-      title: project.name,
-      description: project.description,
-      url: `https://www.ton-site.com/projects/${project.slug}`,
-      images: [
-        {
-          url: project.image || DEFAULT_IMAGE,
-          width: 1200,
-          height: 630,
-          alt: `Aperçu du projet ${project.name}`,
-        },
-      ],
-    },
-  };
-}
 
 export default function ProjectPage({ params }: { params: { slug: string } }) {
   const project = data.projects.find((p) => p.slug === params.slug);

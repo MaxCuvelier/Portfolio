@@ -1,4 +1,3 @@
-import { ArrowRightIcon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
 import Header from 'app/ui/header'
 import Footer from 'app/ui/footer'
