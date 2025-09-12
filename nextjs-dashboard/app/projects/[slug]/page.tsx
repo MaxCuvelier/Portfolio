@@ -2,8 +2,9 @@ import data from "../../data/data.json";
 import { notFound } from "next/navigation";
 import Header from 'app/ui/header'
 import Footer from 'app/ui/footer'
+import { PageProps } from "@/.next/types/app/page";
 
-export default async function ProjectPage({ params }: { params: { slug: string } }) {
+export default async function ProjectPage({ params }: PageProps) {
   const { slug } = await params;
 
   const project = data.projects.find((p) => p.slug === slug);
