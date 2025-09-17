@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import Header from 'app/ui/header'
 import Footer from 'app/ui/footer'
 import { PageProps } from "@/.next/types/app/page";
+import Image from "next/image";
 
 export default async function ProjectPage({ params }: PageProps) {
   const { slug } = await params;
@@ -14,21 +15,54 @@ export default async function ProjectPage({ params }: PageProps) {
   }
 
   return (
-    <div className="flex min-h-screen flex-col p-6">
+     <div className="flex min-h-screen flex-col">
       <Header />
-        <main className="flex-col flex flex-grow">
-          <h1 className="text-3xl font-bold text-gray-900">{project.name}</h1>
-          <p className="mt-4 text-gray-700">{project.description}</p>
 
-          <a
-            href={project.github}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block w-1/6 mt-6 bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition"
-          >
-            Voir sur GitHub
-          </a>
-        </main>
+      <main className="flex items-center flex-col flex-grow w-full">
+        <div className="flex flex-col md:flex-row items-start gap-10 md:gap-48 md:pr-14 md:pl-14 w-full items-center md:mt-0 bg-gray-50 pt-10 pb-10">
+          <div className="relative flex-shrink-0 w-full md:w-2/5 h-48 md:h-72">
+            <Image
+              src={project.image}
+              alt={project.name}
+              fill
+              className="object-contain rounded-lg"
+            />
+          </div>
+
+          <div className="flex flex-col flex-1">
+            <h1 className="text-4xl font-bold text-gray-900 mb-4 md:mt-14">
+              {project.name}
+            </h1>
+
+            <div className="flex flex-wrap gap-2">
+              {project.skills?.map((skill, index) => (
+                <span
+                  key={index}
+                  className="bg-gray-200 text-gray-800 text-sm px-3 py-1 rounded-full"
+                >
+                  {skill}
+                </span>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        <div className="max-w-6xl mx-auto px-6 flex flex-col items-center text-center py-10">
+          <p className="text-gray-700 leading-relaxed text-lg">
+            {project.explication}
+          </p>
+        </div>
+
+        <a
+          href={project.github}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block w-48 bg-pink-500 text-white px-6 py-3 rounded-lg hover:bg-pink-700 transition text-center text-lg md:mt-16"
+        >
+          Voir sur GitHub
+        </a>
+      </main>
+
       <Footer />
     </div>
   );

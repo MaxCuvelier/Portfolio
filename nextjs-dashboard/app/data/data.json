@@ -13,28 +13,36 @@
       "description": "Un site web simple réalisé avec React",
       "slug": "Kasa",
       "github": "https://github.com/MaxCuvelier/Kasa",
-      "image": "/images/Kasa.png"
+      "image": "/images/Kasa.png",
+      "skills": ["Javasript", "CSS", "React"],
+      "explication": "Application de location immobilière, celle-ci a été réalisé entièrement grace au framework javascript React. Le router permet de relier les pages d'accueil, à propos, d'erreur 404 ainsi que les pages de logements. Les pages de logements sont générés dynamiquement avec un carroussel fonctionnel"
     },
     {
       "name": "Application ArgentBank",
       "description": "Une application web simple pour gérer le compte bancaire d'un utilisateur",
       "slug": "ArgentBank",
       "github": "https://github.com/MaxCuvelier/ArgentBank",
-      "image": "/images/ArgentBank.png"
+      "image": "/images/ArgentBank.png",
+      "skills": ["Javasript", "CSS", "React"],
+      "explication": "Application bancaire réalisé à l'aide du framework javascript React permettant de gérer les comptes d'un utilisateur, les données ont été manipulé à l'aide de l'outil Redux permettant une gestion global des states de l'application."
     },
     {
       "name": "Portfolio Sophie Bluel",
       "description": "un site web de type portfolio réaliser en html, css et javaScript",
       "slug": "SophieBluel",
       "github": "https://github.com/MaxCuvelier/SophieBluel",
-      "image": "/images/SophieBluel.png"
+      "image": "/images/SophieBluel.png",
+      "skills": ["Javasript", "CSS", "SEO"],
+      "explication": "Portfolio personnalisé dans lequel toutes les données sont générées en javascript en utilisant le back-end du site, permettant un affichage dynamique et plus durable. Possibilité de manipuler les données stockées en back afin d'ajouter ou de supprimer des travaux."
     },
     {
       "name": "Application Ohmyfood",
       "description": "Un site web réalisé entièrement en html et css avec des animation en scss",
       "slug": "Ohmyfood",
       "github": "https://github.com/MaxCuvelier/Ohmyfood",
-      "image": "/images/Ohmyfood.png"
+      "image": "/images/Ohmyfood.png",
+      "skills": ["html", "CSS", "Sass"],
+      "explication": "Application qui repertorie les menus de restaurants réalisée en html et css en mobile first, le site utilise le framework css Sass permettant l'ajout d'animations plus complexes."
     }
   ]
 }
