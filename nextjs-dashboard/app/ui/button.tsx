@@ -1,19 +1,35 @@
-import clsx from 'clsx';
+'use client'
 
-interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  children: React.ReactNode;
-}
+import { useState } from "react";
+import { Mail } from "lucide-react";
+import { motion, AnimatePresence } from 'framer-motion';
 
-export function Button({ children, className, ...rest }: ButtonProps) {
+export default function ContactButton() {
+  const [showLink, setShowLink] = useState(false);
+
   return (
-    <button
-      {...rest}
-      className={clsx(
-        'flex h-10 items-center rounded-lg bg-blue-500 px-4 text-sm font-medium text-white transition-colors hover:bg-blue-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500 active:bg-blue-600 aria-disabled:cursor-not-allowed aria-disabled:opacity-50',
-        className,
+    <div className="ml-auto flex flex-col items-center gap-2">
+      <button
+        onClick={() => setShowLink((prev) => !prev)}
+        className="font-medium hover:text-pink-600 transition gap-2 pt-1 pb-1 border border-gray-300 rounded-xl p-4 transition-shadow duration-300 hover:shadow-lg"
+      >
+        Contact
+      </button>
+
+      {showLink && (
+        <motion.a
+          href="https://mail.google.com/mail/?view=cm&fs=1&to=maxime.cuvelier1305@gmail.com&su=Contact%20depuis%20portfolio&body=Bonjour,"
+          className="hover:text-pink-500 transition"
+          target="_blank"
+          rel="noopener noreferrer"
+          initial={{ opacity: 0, y: -7 }}
+              animate={{ opacity: 0.7, y: 0 }}
+              exit={{ opacity: 0, y: -10 }}
+              transition={{ duration: 0.2 }}
+        >
+          <Mail className="w-6 h-6" />
+        </motion.a>
       )}
-    >
-      {children}
-    </button>
+    </div>
   );
 }

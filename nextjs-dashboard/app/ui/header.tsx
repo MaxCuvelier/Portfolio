@@ -1,5 +1,6 @@
 import '@/app/ui/global.css';
 import Link from 'next/link';
+import ContactButton from './button';
 
 export default function Header() {
     return (
@@ -9,8 +10,8 @@ export default function Header() {
         className='font-black text-foreground text-lg'>
         <span>Portfolio</span>
     </Link>
-    <div className='ml-auto flex items-center gap-2'>
-        <button>Contact</button>
+    <div>
+        <ContactButton />
     </div>
 </header>
     )

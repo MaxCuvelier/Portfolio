@@ -4,6 +4,7 @@ import Header from 'app/ui/header'
 import Footer from 'app/ui/footer'
 import { PageProps } from "@/.next/types/app/page";
 import Image from "next/image";
+import { miniSkillIcons } from "../../ui/icons"
 
 export default async function ProjectPage({ params }: PageProps) {
   const { slug } = await params;
@@ -19,17 +20,19 @@ export default async function ProjectPage({ params }: PageProps) {
       <Header />
 
       <main className="flex items-center flex-col flex-grow w-full">
-        <div className="flex flex-col md:flex-row items-start gap-10 md:gap-48 md:pr-14 md:pl-14 w-full items-center md:mt-0 bg-gray-50 pt-10 pb-10">
+        <div className="flex flex-col md:flex-row items-start gap-10 md:gap-28 md:pr-14 md:pl-14 w-full items-center md:mt-0 bg-gray-50 pt-6 pb-10">
           <div className="relative flex-shrink-0 w-full md:w-2/5 h-48 md:h-72">
             <Image
+              priority={true}
               src={project.image}
               alt={project.name}
               fill
               className="object-contain rounded-lg"
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             />
           </div>
 
-          <div className="flex flex-col flex-1">
+          <div className="flex flex-col flex-1 gap-2">
             <h1 className="text-4xl font-bold text-gray-900 mb-4 md:mt-14">
               {project.name}
             </h1>
@@ -38,12 +41,14 @@ export default async function ProjectPage({ params }: PageProps) {
               {project.skills?.map((skill, index) => (
                 <span
                   key={index}
-                  className="bg-gray-200 text-gray-800 text-sm px-3 py-1 rounded-full"
+                  className="flex items-center gap-1 bg-gray-100 px-2 py-1 rounded-full text-sm"
                 >
-                  {skill}
+                  {miniSkillIcons[skill] || <span>{skill}</span>}
+                  <span>{skill}</span>
                 </span>
               ))}
             </div>
+            <p className="text-gray-600 mt-2">{project.description}</p>
           </div>
         </div>
 

@@ -1,11 +1,13 @@
 {
   "nom": "Cuvelier",
   "prenom": "Maxime",
-  "compétence": [
+  "skills": [
     "html",
     "css",
-    "Javasript",
-    "React"
+    "javascript",
+    "react",
+    "nextjs",
+    "tailwind"
   ],
   "projects": [
     {
@@ -14,8 +16,8 @@
       "slug": "Kasa",
       "github": "https://github.com/MaxCuvelier/Kasa",
       "image": "/images/Kasa.png",
-      "skills": ["Javasript", "CSS", "React"],
-      "explication": "Application de location immobilière, celle-ci a été réalisé entièrement grace au framework javascript React. Le router permet de relier les pages d'accueil, à propos, d'erreur 404 ainsi que les pages de logements. Les pages de logements sont générés dynamiquement avec un carroussel fonctionnel"
+      "skills": ["javascript", "css", "react"],
+      "explication": "Projet de type scolaire dans le cadre d'une formation Openclassroom. La demande consistait dans la création d'une application de location immobilière en React avec d'abord la création d'un router fonctionnel avec 4 pages, la page d'accueil, la page à propos, la page d'erreur 404 et les pages de logements. Les pages de logements sont générées dynamiquement via le back-end avec notament un carroussel."
     },
     {
       "name": "Application ArgentBank",
@@ -23,8 +25,8 @@
       "slug": "ArgentBank",
       "github": "https://github.com/MaxCuvelier/ArgentBank",
       "image": "/images/ArgentBank.png",
-      "skills": ["Javasript", "CSS", "React"],
-      "explication": "Application bancaire réalisé à l'aide du framework javascript React permettant de gérer les comptes d'un utilisateur, les données ont été manipulé à l'aide de l'outil Redux permettant une gestion global des states de l'application."
+      "skills": ["javascript", "css", "react"],
+      "explication": "Projet de type scolaire dans le cadre d'une formation Openclassroom. La demande consistait dans la créatin d'une application bancaire réalisé en React permettant de gérer les comptes d'un utilisateur, les données ont été manipulé à l'aide de l'outil Redux permettant une gestion global des states de l'application via le store. L'application devait permettre de se connecter à son profile utilisateur, avoir accès aux comptes bancaire liés à l'utilisateur en question et pouvoir modifier les informations de l'utilisateur tel que le nom grace à un formulaire."
     },
     {
       "name": "Portfolio Sophie Bluel",
@@ -32,8 +34,8 @@
       "slug": "SophieBluel",
       "github": "https://github.com/MaxCuvelier/SophieBluel",
       "image": "/images/SophieBluel.png",
-      "skills": ["Javasript", "CSS", "SEO"],
-      "explication": "Portfolio personnalisé dans lequel toutes les données sont générées en javascript en utilisant le back-end du site, permettant un affichage dynamique et plus durable. Possibilité de manipuler les données stockées en back afin d'ajouter ou de supprimer des travaux."
+      "skills": ["javascript", "css", "seo"],
+      "explication": "Projet de type scolaire dans le cadre d'une formation Openclassroom. La demande consistait dans la création d'un portfolio personnalisé dans lequel toutes les données sont générées en javascript en utilisant le back-end du site via des demande à l'API fourni, permettant un affichage dynamique et plus durable. Il fallait pouvoir s'identifier via un formulaire afin d'avoir accès à la version edition du site pour avoir la possibilité de manipuler les données stockées en back afin d'ajouter ou de supprimer des travaux, les modifications devaient être traité directement afin d'afficher dynamiquement les nouveaux travaux dans le portfolio."
     },
     {
       "name": "Application Ohmyfood",
@@ -41,8 +43,8 @@
       "slug": "Ohmyfood",
       "github": "https://github.com/MaxCuvelier/Ohmyfood",
       "image": "/images/Ohmyfood.png",
-      "skills": ["html", "CSS", "Sass"],
-      "explication": "Application qui repertorie les menus de restaurants réalisée en html et css en mobile first, le site utilise le framework css Sass permettant l'ajout d'animations plus complexes."
+      "skills": ["html", "css", "sass"],
+      "explication": "Projet de type scolaire dans le cadre d'une formation Openclassroom. La demande consistait dans la création d'une application qui repertorie les menus de restaurants, réalisée en html et css en mobile first. Il fallait intégrer les différentes pages ainsi que leur responsive, à savoir page d'accueil et pages de chaque restaurants, le projet consistait aussi à utiliser le framework css Sass afin d'implémenter des animations complexes ur différents éléments de l'application."
     }
   ]
 }

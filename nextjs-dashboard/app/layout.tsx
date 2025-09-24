@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Portfolio de Maxime Cuvelier",
     description: "Découvrez mes projets et réalisations en développement web.",
-    url: "https://www.ton-site.com",
+    url: "https://portfolio-olive-three-25.vercel.app/",
     siteName: "Portfolio Maxime Cuvelier",
     images: [
       {
