@@ -5,7 +5,7 @@ const skills = data.skills
 
 export default function Banner() {
   return (
-    <section className="bg-gray-50 py-10 md:py-20">
+    <section className="bg-gray-50 py-10 md:py-16">
       <div className="max-w-6xl mx-auto px-6 flex flex-col items-center text-center">
         <h1 className="text-4xl sm:text-5xl font-bold text-gray-900">
           Bonjour, je suis <span className="text-pink-500">Maxime</span>

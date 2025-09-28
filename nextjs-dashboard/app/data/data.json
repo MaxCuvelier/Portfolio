@@ -17,7 +17,10 @@
       "github": "https://github.com/MaxCuvelier/Kasa",
       "image": "/images/Kasa.png",
       "skills": ["javascript", "css", "react"],
-      "explication": "Projet de type scolaire dans le cadre d'une formation Openclassroom. La demande consistait dans la création d'une application de location immobilière en React avec d'abord la création d'un router fonctionnel avec 4 pages, la page d'accueil, la page à propos, la page d'erreur 404 et les pages de logements. Les pages de logements sont générées dynamiquement via le back-end avec notament un carroussel."
+      "details": "Projet scolaire, Openclassroom, 2025",
+      "contexte": "Le site de Kasa est une application de location immobilière. J'ai eu l'occasion de travailler sur leur projet de refonte totale pour passer à une stack complète en JavaScript avec NodeJS côté back-end, et React côté front-end.",
+      "fonction": "Mon poste était celui de développeur front-end et consistait à démarrer le projet React et développer l’ensemble de l’application, les composants React, les routes React Router, en suivant les maquettes Figma.",
+      "bulletpoint": ["Initialiser le projet et ajouter le React router", "Création des pages et intégration en suivant les maquettes", "Création du carrousel de la page logement", "Intégration dynamique de la page logement via la back-end"]
     },
     {
       "name": "Application ArgentBank",
@@ -26,7 +29,10 @@
       "github": "https://github.com/MaxCuvelier/ArgentBank",
       "image": "/images/ArgentBank.png",
       "skills": ["javascript", "css", "react"],
-      "explication": "Projet de type scolaire dans le cadre d'une formation Openclassroom. La demande consistait dans la créatin d'une application bancaire réalisé en React permettant de gérer les comptes d'un utilisateur, les données ont été manipulé à l'aide de l'outil Redux permettant une gestion global des states de l'application via le store. L'application devait permettre de se connecter à son profile utilisateur, avoir accès aux comptes bancaire liés à l'utilisateur en question et pouvoir modifier les informations de l'utilisateur tel que le nom grace à un formulaire."
+      "details": "Projet scolaire, Openclassroom, 2025",
+      "contexte": "ArgentBank est une banque en ligne, j'ai rejoint le projet en tant que développeur front-end afin de mettre en place le nouveau système d'authentification des utilisateurs pour cette application React.",
+      "fonction": "Mon poste était celui de développeur front-end avec comme objectif celui d'intégrer la page d'accueil et la page utilisateur ainsi que gérer les informations de celui-ci via l'utilisation de Redux store afin d'afficher les données correspondantes à l'utilisateur et pouvoir les modifier via un formulaire.",
+      "bulletpoint": ["installer et intégrer l'application", "mettre en place le state global redux et la connection de l'utilisateur", "intégrer le formulaire pour changer les information utilisateur"]
     },
     {
       "name": "Portfolio Sophie Bluel",
@@ -35,7 +41,10 @@
       "github": "https://github.com/MaxCuvelier/SophieBluel",
       "image": "/images/SophieBluel.png",
       "skills": ["javascript", "css", "seo"],
-      "explication": "Projet de type scolaire dans le cadre d'une formation Openclassroom. La demande consistait dans la création d'un portfolio personnalisé dans lequel toutes les données sont générées en javascript en utilisant le back-end du site via des demande à l'API fourni, permettant un affichage dynamique et plus durable. Il fallait pouvoir s'identifier via un formulaire afin d'avoir accès à la version edition du site pour avoir la possibilité de manipuler les données stockées en back afin d'ajouter ou de supprimer des travaux, les modifications devaient être traité directement afin d'afficher dynamiquement les nouveaux travaux dans le portfolio."
+      "details": "Projet scolaire, Openclassroom, 2024",
+      "contexte": "L’agence ArchiWebos m'a missionné pour aider sur la conception du site portfolio d’une architecte d’intérieur en tant que développeur front-end.",
+      "fonction": "Mon poste était celui de développeur front-end avec comme objectif d'intégrer la page d'accueil sur laquelle figurent les différents travaux dynamiquement, la possibilité de se connecter en tant qu'administrateur afin d'apporter des modifications aux travaux et une modale permettant d'ajouter des travaux.",
+      "bulletpoint": ["création de la page d'accueil avec filtres pour les travaux", "création de la page d'authentification pour le mode administration", "création de la modale et de son formulaire", "gestion des ajouts et suppressions de travaux", "traitement de la réponse API pour l'affichage dynamique des travaux"]
     },
     {
       "name": "Application Ohmyfood",
@@ -44,7 +53,10 @@
       "github": "https://github.com/MaxCuvelier/Ohmyfood",
       "image": "/images/Ohmyfood.png",
       "skills": ["html", "css", "sass"],
-      "explication": "Projet de type scolaire dans le cadre d'une formation Openclassroom. La demande consistait dans la création d'une application qui repertorie les menus de restaurants, réalisée en html et css en mobile first. Il fallait intégrer les différentes pages ainsi que leur responsive, à savoir page d'accueil et pages de chaque restaurants, le projet consistait aussi à utiliser le framework css Sass afin d'implémenter des animations complexes ur différents éléments de l'application."
+      "details": "Projet scolaire, Openclassroom, 2024",
+      "contexte": "J'ai intégré Ohmyfood en tant que développeur junior. Il s’agit d’une jeune startup qui voudrait s'imposer sur le marché de la restauration. Déjà présente à New-York, elle souhaite désormais faire sa place à Paris.",
+      "fonction": "Ma mission était d'intégrer la version mobile de l'application puis de gérer le responsive pour la page d'accueil ainsi que les pages des restaurants. Il fallait aussi créer des animations en css pour différents éléments du site.",
+      "bulletpoint": ["intégrer la version mobile puis le responsive de la page d'accueil", "créer les animations css", "créer les pages de restaurants" , "intégrer le responsive et les animations pour les pages restaurants"]
     }
   ]
 }

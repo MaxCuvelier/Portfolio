@@ -20,8 +20,8 @@ export default async function ProjectPage({ params }: PageProps) {
       <Header />
 
       <main className="flex items-center flex-col flex-grow w-full">
-        <div className="flex flex-col md:flex-row items-start gap-10 md:gap-28 md:pr-14 md:pl-14 w-full items-center md:mt-0 bg-gray-50 pt-6 pb-10">
-          <div className="relative flex-shrink-0 w-full md:w-2/5 h-48 md:h-72">
+        <div className="flex flex-col items-start gap-5 md:pr-14 md:pl-14 w-full items-center md:mt-0 bg-gray-50 pt-6 pb-10">
+          <div className="relative flex-shrink-0 w-full h-72 md:h-96">
             <Image
               priority={true}
               src={project.image}
@@ -33,9 +33,10 @@ export default async function ProjectPage({ params }: PageProps) {
           </div>
 
           <div className="flex flex-col flex-1 gap-2">
-            <h1 className="text-4xl font-bold text-gray-900 mb-4 md:mt-14">
+            <h1 className="text-4xl font-bold text-gray-900 mb-4 md:mt-6">
               {project.name}
             </h1>
+            <p>{project.details}</p>
 
             <div className="flex flex-wrap gap-2">
               {project.skills?.map((skill, index) => (
@@ -48,14 +49,29 @@ export default async function ProjectPage({ params }: PageProps) {
                 </span>
               ))}
             </div>
-            <p className="text-gray-600 mt-2">{project.description}</p>
           </div>
         </div>
 
-        <div className="max-w-6xl mx-auto px-6 flex flex-col items-center text-center py-10">
-          <p className="text-gray-700 leading-relaxed text-lg">
-            {project.explication}
-          </p>
+        <div className="max-w-6xl mx-auto px-6 flex flex-col py-5 md:w-3/5">
+          <h2 className="text-xl font-bold mt-6">Contexte :</h2>
+            <p className="text-gray-700 leading-relaxed text-lg">
+              {project.contexte}
+            </p>
+          <h2 className="text-xl font-bold mt-6">Fonction :</h2>
+            <p className="text-gray-700 leading-relaxed text-lg">
+              {project.fonction}
+            </p>
+          <h2 className="text-xl font-bold mt-6">Réalisations :</h2>
+            <ul className="list-disc list-inside text-gray-700">
+              {project.bulletpoint?.map((bulletpoint, index) => (
+                <li
+                  key={index}
+                  className="text-gray-700 text-lg"
+                >
+                  {bulletpoint}   
+                  </li>
+              ))}
+            </ul>
         </div>
 
         <a
