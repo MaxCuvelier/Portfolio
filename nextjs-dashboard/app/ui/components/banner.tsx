@@ -26,10 +26,10 @@ export default function Banner() {
           ))}
         </div>
         <a
-          href="#projects"
+          href="/apropos/"
           className="mt-8 inline-block bg-pink-500 text-white px-6 py-3 rounded-lg shadow hover:bg-pink-700 transition"
         >
-          Voir mes projets
+          A propos
         </a>
       </div>
     </section>
