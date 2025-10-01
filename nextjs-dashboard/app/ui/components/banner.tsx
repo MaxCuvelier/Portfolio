@@ -14,7 +14,7 @@ export default function Banner() {
           Développeur web débutant, spécialisé dans le développement front-end en React. 
           Bienvenue sur mon portfolio, ici je partage mes projets et mon travail.
         </p>
-        <h3 className="text-2xl font-bold text-gray-800 mt-4">Mes compétences :</h3>
+        <h3 className="text-2xl font-bold text-gray-800 mt-4">Mes compétences</h3>
         <div className="flex flex-wrap justify-center gap-6 mt-8">
           {skills.map((skill) => (
             <div key={skill} className="flex flex-col items-center">
@@ -25,12 +25,6 @@ export default function Banner() {
             </div>
           ))}
         </div>
-        <a
-          href="/apropos/"
-          className="mt-8 inline-block bg-pink-500 text-white px-6 py-3 rounded-lg shadow hover:bg-pink-700 transition"
-        >
-          A propos
-        </a>
       </div>
     </section>
   );

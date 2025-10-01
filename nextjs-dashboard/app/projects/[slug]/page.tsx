@@ -53,15 +53,15 @@ export default async function ProjectPage({ params }: PageProps) {
         </div>
 
         <div className="max-w-6xl mx-auto px-6 flex flex-col py-5 md:w-3/5">
-          <h2 className="text-xl font-bold mt-6">Contexte :</h2>
+          <h2 className="text-xl font-bold mt-6">Contexte</h2>
             <p className="text-gray-700 leading-relaxed text-lg">
               {project.contexte}
             </p>
-          <h2 className="text-xl font-bold mt-6">Fonction :</h2>
+          <h2 className="text-xl font-bold mt-6">Fonction</h2>
             <p className="text-gray-700 leading-relaxed text-lg">
               {project.fonction}
             </p>
-          <h2 className="text-xl font-bold mt-6">Réalisations :</h2>
+          <h2 className="text-xl font-bold mt-6">Réalisations</h2>
             <ul className="list-disc list-inside text-gray-700">
               {project.bulletpoint?.map((bulletpoint, index) => (
                 <li
@@ -78,7 +78,7 @@ export default async function ProjectPage({ params }: PageProps) {
           href={project.github}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-block w-48 bg-pink-500 text-white px-6 py-3 rounded-lg hover:bg-pink-700 transition text-center text-lg md:mt-16"
+          className="inline-block w-48 bg-pink-500 text-white px-6 py-3 rounded-lg hover:bg-pink-700 transition text-center text-lg mb-8"
         >
           Voir sur GitHub
         </a>

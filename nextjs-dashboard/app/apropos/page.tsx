@@ -1,16 +1,21 @@
 import Header from "../ui/header";
 import Footer from "../ui/footer";
 import Image from "next/image";
+import data from "../data/data.json";
 import portrait from "../../public/images/portrait.png"
+import { miniSkillIcons } from "../ui/icons"
 
 const Portrait = portrait
+
+const skills = data.skills
+
 
 export default function APpropos() {
     return (
      <div className="flex min-h-screen flex-col p-0">
         <Header />
-            <div className="flex flex-grow flex-col items-center gap-10">
-                <div className="flex sm:flex-raw flex-col items-center pt-8 pb-8 gap-1 sm:gap-8 bg-gray-50 w-full">
+            <div className="flex flex-grow flex-col items-center gap-6">
+                <div className="flex sm:flex-raw flex-col items-center pt-8 pb-8 gap-1 sm:gap-6 bg-gray-50 w-full">
                     <Image
                         src={Portrait}
                         alt='Portrait'
@@ -18,22 +23,35 @@ export default function APpropos() {
                         height={100}
                         className="object-contain border border-gray-300 rounded-3xl"
                     />
-                    <div className="flex flex-col gap-14">
-                        <h1 className="text-2xl text-center font-bold">A propos de moi</h1>
-                        <p className="text-center">Je suis Maxime cuvelier, 26 ans, jeune développeur spécialisé dans le développement front-end.</p>
+                    <div className="flex flex-col gap-4">
+                        <h1 className="text-4xl text-center font-bold">A propos de moi</h1>
+                        <p className="text-center text-lg text-gray-600 max-w-2xl">Je suis Maxime cuvelier, 26 ans, jeune développeur spécialisé dans le développement front-end.</p>
                     </div>
                 </div>
-                <div className=" flex flex-col text-left gap-4 pr-16 pl-16 sm:pl-28 sm:pr-28">
-                    <h2 className="font-bold text-left">Mon parcours :</h2>
-                        <p>
+                <div className="flex flex-col text-left gap-2 max-w-6xl mx-auto px-6 py-5 md:w-3/5 sm:mb-4">
+                    <h2 className="text-xl font-bold text-left">Mon parcours</h2>
+                        <p className="text-gray-700 text-lg">
                             J'ai obtenu mon baccalauréat ES en 2017 puis je me suis orienté vers des études littéraire, d'abord en classe préparatoire khâgne puis en license d'histoire à l'université de
                             à marne la vallée. En 2024 j'ai décider de me réorienter vers le développement web et c'est dans ce cadre que j'ai entrepris une formation Openclassroom en 
                             intégrateur web. 
                         </p>
-                    <h2 className="font-bold">Mes compétences :</h2>
-                        <ul className="list-disc list-inside text-gray-700">
-                            <li>Developpement front-end, spécialité React</li>
+                    <h2 className="text-xl font-bold mt-6">Mes compétences</h2>
+                        <ul className="list-disc list-inside text-gray-700 text-gray-700 text-lg">
+                            <li>Compétences techniques en développement
+                                <div className="flex flex-wrap gap-1 pl-6 sm:pl-4">
+                                    {skills?.map((skill, index) => (
+                                        <span
+                                            key={index}
+                                            className="flex items-center gap-1 sm:px-2 sm:py-1 text-sm"
+                                        >
+                                            {miniSkillIcons[skill] || <span>{skill}</span>}
+                                            <span>{skill}</span>
+                                        </span>
+                                    ))}
+                                </div>
+                            </li>
                             <li>Rédaction de test fonctionnel et unitaire</li>
+                            <li>SEO et gestion de referencement</li>
                             <li>Gestion de projets</li>
                             <li>Langues : français, anglais</li>
                         </ul>

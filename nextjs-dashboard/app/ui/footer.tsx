@@ -3,10 +3,10 @@ import { Github, Mail } from "lucide-react";
 
 export default function Footer() {
     return (
-    <footer className="bg-gray-900 text-gray-300 py-8 mt-12">
+    <footer className="bg-gray-900 text-gray-300 py-8">
       <div className="px-4 flex flex-col md:flex-row justify-between items-center gap-6">
         <div className="text-lg font-semibold text-white">
-          Mon Portfolio © {new Date().getFullYear()}
+          Maxime Cuvelier © {new Date().getFullYear()}
         </div>
         <div className="flex gap-4">
           <a href="https://github.com/MaxCuvelier?tab=repositories"
